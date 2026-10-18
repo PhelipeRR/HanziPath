@@ -1,0 +1,11 @@
+{
+  "name": "HanziPath · 汉字之路",
+  "short_name": "HanziPath",
+  "description": "Aprenda chinês, um caractere por dia.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7faf8",
+  "theme_color": "#087f78",
+  "icons": []
+}
