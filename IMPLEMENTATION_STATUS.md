@@ -19,6 +19,9 @@
 - Dashboard alimentado pela API e progresso real do banco.
 - Fila de revisão por data, intervalos, ease, histórico e domínio após quatro acertos.
 - Configurações persistentes e backup JSON com validação de versão.
+- PWA com registro real do service worker, manifest, ícones, cache e fallback offline.
+- Testes Vitest e cenários Playwright adicionados.
+- Aviso do módulo Tailwind removido do build.
 
 ## Pendente
 
@@ -28,6 +31,7 @@
 - Algoritmo FSRS/SM-2 completo; atualmente há repetição espaçada persistente com ajuste de ease.
 - PWA/offline, segmentação lexical completa, 50 caracteres e dez leituras.
 - Suíte Vitest/Playwright e autenticação/proteção para exposição externa.
+- Playwright ainda precisa dos browsers instalados/execução em CI.
 
 ## Próximo passo recomendado
 

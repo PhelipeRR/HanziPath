@@ -19,6 +19,10 @@ O projeto inclui `vercel.json` e pode ser importado diretamente pelo painel do V
 
 O projeto usa Neon PostgreSQL em produção por meio de `DATABASE_URL`. O schema mínimo é criado automaticamente na primeira chamada da API. Para evoluções maiores, as próximas etapas devem substituir essa inicialização por migrations versionadas e seed completo.
 
+## Segurança e testes
+
+O projeto mantém a proteção de acesso do Vercel para o deployment e valida payloads com Zod. `npm test` executa os testes unitários e `npm run test:e2e` executa os fluxos Playwright. O PWA registra o service worker no cliente, possui fallback offline e cache de páginas visitadas.
+
 ## Estado atual
 
 A primeira entrega inclui dashboard responsivo, navegação desktop/mobile, quatro aulas iniciais com conteúdo real, dicionário pesquisável com 20 caracteres, aula interativa, revisão com quatro avaliações, leitor graduado com áudio e configurações. A persistência de progresso e o banco SQLite estão preparados para a próxima camada de implementação; o estado da sessão atual é local à interface.
