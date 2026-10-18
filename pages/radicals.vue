@@ -1,0 +1,2 @@
+<script setup lang="ts">import {radicals} from '~/data/expanded'</script>
+<template><section><div class="page-title"><span class="eyebrow">COMPONENTES</span><h1>Radicais e componentes</h1><p class="muted">Pistas de significado ajudam, mas não são regras absolutas.</p></div><div class="grid character-grid"><div v-for="r in radicals" :key="r[0]" class="card char-card"><div class="hanzi">{{r[0]}}</div><b>{{r[1]}}</b><small>Forma: {{r[2]}}</small><p class="muted">Ex.: {{r[3]}}</p></div></div></section></template>

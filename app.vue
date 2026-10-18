@@ -3,7 +3,9 @@ const route = useRoute()
 const nav = [
   { to: '/', label: 'Início', icon: '⌂' }, { to: '/lessons', label: 'Aulas', icon: '◈' },
   { to: '/characters', label: 'Dicionário', icon: '字' }, { to: '/review', label: 'Revisar', icon: '↻' },
-  { to: '/reader', label: 'Leitor', icon: '文' }
+  { to: '/reader', label: 'Leitor', icon: '文' }, { to: '/pinyin', label: 'Pinyin', icon: '音' },
+  { to: '/stats', label: 'Estatísticas', icon: '▥' }, { to: '/radicals', label: 'Radicais', icon: '部' },
+  { to: '/achievements', label: 'Conquistas', icon: '◆' }
 ]
 </script>
 <template>
