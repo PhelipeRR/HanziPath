@@ -1,0 +1,3 @@
+import { db, ensureSchema } from '../utils/db'
+import { sql } from 'drizzle-orm'
+export default defineEventHandler(async () => { await ensureSchema(); const progress=(await db.execute(sql`SELECT * FROM progress WHERE id=1`)).rows[0]; const settings=(await db.execute(sql`SELECT * FROM settings WHERE id=1`)).rows[0]; const pending=(await db.execute(sql`SELECT COUNT(*)::int AS count FROM flashcard WHERE next_review <= NOW() AND mastered=false`)).rows[0]; const reviews=(await db.execute(sql`SELECT COUNT(*)::int AS count, COALESCE(AVG(CASE WHEN rating <> 'again' THEN 1 ELSE 0 END),0)::float AS accuracy FROM review`)).rows[0]; return { progress, settings, pending, reviews } })
