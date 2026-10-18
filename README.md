@@ -17,7 +17,7 @@ Depois acesse `http://localhost:3000`. O conteúdo inicial está em `data/conten
 
 O projeto inclui `vercel.json` e pode ser importado diretamente pelo painel do Vercel usando o repositório GitHub. Também é possível executar `npx vercel` localmente após autenticar com `npx vercel login`.
 
-O SQLite local funciona para desenvolvimento e protótipos. No Vercel, o filesystem das funções é efêmero; para manter progresso permanentemente em produção, substitua o adaptador SQLite por um banco persistente externo (por exemplo, Turso/libSQL ou Neon Postgres).
+O projeto usa Neon PostgreSQL em produção por meio de `DATABASE_URL`. O schema mínimo é criado automaticamente na primeira chamada da API. Para evoluções maiores, as próximas etapas devem substituir essa inicialização por migrations versionadas e seed completo.
 
 ## Estado atual
 

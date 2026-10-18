@@ -14,12 +14,14 @@
 - SQLite local com tabelas de progresso, conclusões e revisões.
 - Endpoints Nitro com validação Zod para progresso, aulas concluídas e avaliações.
 - Conclusão de aula e revisão agora persistem no banco.
+- Adaptador migrado de SQLite para Neon PostgreSQL com Drizzle.
+- Schema PostgreSQL criado automaticamente na primeira chamada da API.
 
 ## Pendente
 
 - Build de produção validado com `npm run build`.
 - Ainda falta cobertura automatizada de testes.
-- Persistência SQLite/Drizzle e migrations.
+- Migrations versionadas e seed completo do banco.
 - FSRS/SM-2 persistido, APIs Nitro e histórico de sessões.
 - PWA/offline, segmentação lexical completa, 50 caracteres e dez leituras.
 - Suíte Vitest/Playwright e autenticação/proteção para exposição externa.

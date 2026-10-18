@@ -1,2 +1,3 @@
-import db from '../utils/db'
-export default defineEventHandler(() => db.prepare('SELECT * FROM progress WHERE id=1').get())
+import { db, ensureSchema } from '../utils/db'
+import { sql } from 'drizzle-orm'
+export default defineEventHandler(async () => { await ensureSchema(); return (await db.execute(sql`SELECT * FROM progress WHERE id=1`)).rows[0] })
